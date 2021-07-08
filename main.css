@@ -4,6 +4,7 @@ html, body{
     width: 100%;
     font-family: 'Poppins' sans-serif;
     color: #222;
+    scroll-behavior: smooth;
   }
   
   /*######################################*/
@@ -26,8 +27,9 @@ html, body{
   /*--image carousel styling--*/
  
   .carousel-inner img {
+    position:relative;
     width: 100%;
-    height: 80%;   
+
   }
   .carousel-caption{
     position:absolute;
@@ -144,7 +146,62 @@ html, body{
     margin-bottom: 1rem;
   }
   
-  
+  #btn {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    position: relative;
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
+    z-index: 10;
+}
+
+#btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 rebeccapurple;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+.particle {
+    --x: 0;
+    --y: 0;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5px;
+    width: 5px;
+    /* z-index: 7; */
+}
+
+.particle.move {
+    animation: move 1000ms linear forwards;
+}
+
+@keyframes move {
+    to {
+        transform: translate(var(--x), var(--y));
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
   
   .fa-google-plus-g{color: #dd4b39;}
   .fa-instagram{color: #517fa8;}
