@@ -25,7 +25,12 @@ html, body{
   /*######################################*/
   
   /*--image carousel styling--*/
- 
+ #cardbox{
+   margin-top: 50px;
+ }
+ .card{
+   margin: 55px auto;
+ }
   .carousel-inner img {
     position:relative;
     width: 100%;
@@ -145,7 +150,7 @@ html, body{
     margin-top: .8rem;
     margin-bottom: 1rem;
   }
-  
+  /*Javascript Button styling Below*/
   #btn {
     background-color: rebeccapurple;
     border-radius: 5px;
@@ -156,7 +161,7 @@ html, body{
     padding: 1rem 2rem;
     position: relative;
     transition: transform 0.1s linear, box-shadow 0.1s linear;
-    z-index: 10;
+    z-index: 1;    
 }
 
 #btn:active {
@@ -178,7 +183,7 @@ html, body{
     left: 50%;
     height: 5px;
     width: 5px;
-    /* z-index: 7; */
+    z-index: 7;
 }
 
 .particle.move {
@@ -199,7 +204,7 @@ html, body{
     }
 }
 
-
+/* Javascript Button styling End*/
 
 
   
