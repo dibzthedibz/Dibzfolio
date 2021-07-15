@@ -25,11 +25,11 @@ html, body{
   /*######################################*/
   
   /*--image carousel styling--*/
- #cardbox{
-   margin-top: 50px;
- }
+ 
  .card{
+   max-width: 75%;
    margin: 55px auto;
+   
  }
   .carousel-inner img {
     position:relative;
@@ -93,6 +93,15 @@ html, body{
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
+  }
+  .row{
+    padding-top: 0;
+  }
+  .row hr{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
   }
   .welcome hr{
     border-top: 2px solid #b4b4b4;
